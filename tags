@@ -1,0 +1,172 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFFER_H	helpers/buffer.h	2;"	d
+BUFFER_REALLOC_AMOUNT	helpers/buffer.h	7;"	d
+COMPILER_FILE_COMPILED_OK	compiler.h	/^        COMPILER_FILE_COMPILED_OK,$/;"	e	enum:__anon4
+COMPILER_FILE_FAILED_WITH_ERRORS	compiler.h	/^        COMPILER_FILE_FAILED_WITH_ERRORS,$/;"	e	enum:__anon4
+INCLUDES	Makefile	/^INCLUDES= -I.\/$/;"	m
+LEXICAL_ANALYSIS_ALL_OK	compiler.h	/^        LEXICAL_ANALYSIS_ALL_OK,$/;"	e	enum:__anon1
+LEXICAL_ANALYSIS_INPUT_ERROR	compiler.h	/^        LEXICAL_ANALYSIS_INPUT_ERROR,$/;"	e	enum:__anon1
+LEX_GETC_IF	lexer.c	6;"	d	file:
+LEX_PROCESS_NEXT_CHAR	compiler.h	/^typedef char (*LEX_PROCESS_NEXT_CHAR)(struct lex_process *process);$/;"	t
+LEX_PROCESS_PEEK_CHAR	compiler.h	/^typedef char (*LEX_PROCESS_PEEK_CHAR)(struct lex_process *process);$/;"	t
+LEX_PROCESS_PUSH_CHAR	compiler.h	/^typedef void (*LEX_PROCESS_PUSH_CHAR)(struct lex_process *process, char c);$/;"	t
+NUMERIC_CASE	compiler.h	14;"	d
+OBJECTS	Makefile	/^OBJECTS=.\/build\/compiler.o .\/build\/cprocess.o .\/build\/helpers\/buffer.o .\/build\/helpers\/vector.o$/;"	m
+TOKEN_TYPE_COMMENT	compiler.h	/^        TOKEN_TYPE_COMMENT,$/;"	e	enum:__anon2
+TOKEN_TYPE_IDENTIFIER	compiler.h	/^        TOKEN_TYPE_IDENTIFIER,$/;"	e	enum:__anon2
+TOKEN_TYPE_KEYWORD	compiler.h	/^        TOKEN_TYPE_KEYWORD,$/;"	e	enum:__anon2
+TOKEN_TYPE_NEWLINE	compiler.h	/^        TOKEN_TYPE_NEWLINE,$/;"	e	enum:__anon2
+TOKEN_TYPE_NUMBER	compiler.h	/^        TOKEN_TYPE_NUMBER,$/;"	e	enum:__anon2
+TOKEN_TYPE_OPERATOR	compiler.h	/^        TOKEN_TYPE_OPERATOR,$/;"	e	enum:__anon2
+TOKEN_TYPE_STRING	compiler.h	/^        TOKEN_TYPE_STRING,$/;"	e	enum:__anon2
+TOKEN_TYPE_SYMBOL	compiler.h	/^        TOKEN_TYPE_SYMBOL,$/;"	e	enum:__anon2
+VECTOR_ELEMENT_INCREMENT	helpers/vector.h	12;"	d
+VECTOR_FLAG_PEEK_DECREMENT	helpers/vector.h	/^    VECTOR_FLAG_PEEK_DECREMENT = 0b00000001$/;"	e	enum:__anon5
+VECTOR_H	helpers/vector.h	2;"	d
+__PEACH_COMPILER_H__	compiler.h	2;"	d
+abs_path	compiler.h	/^                const char *abs_path;$/;"	m	struct:compile_process::compile_process_input_file
+any	compiler.h	/^                void *any;$/;"	m	union:token::__anon3
+between_brackets	compiler.h	/^        const char *between_brackets;$/;"	m	struct:token
+buffer	helpers/buffer.h	/^struct buffer$/;"	s
+buffer_create	helpers/buffer.c	/^struct buffer* buffer_create()$/;"	f
+buffer_extend	helpers/buffer.c	/^void buffer_extend(struct buffer* buffer, size_t size)$/;"	f
+buffer_free	helpers/buffer.c	/^void buffer_free(struct buffer* buffer)$/;"	f
+buffer_need	helpers/buffer.c	/^void buffer_need(struct buffer* buffer, size_t size)$/;"	f
+buffer_peek	helpers/buffer.c	/^char buffer_peek(struct buffer* buffer)$/;"	f
+buffer_printf	helpers/buffer.c	/^void buffer_printf(struct buffer* buffer, const char* fmt, ...)$/;"	f
+buffer_printf_no_terminator	helpers/buffer.c	/^void buffer_printf_no_terminator(struct buffer* buffer, const char* fmt, ...)$/;"	f
+buffer_ptr	helpers/buffer.c	/^void* buffer_ptr(struct buffer* buffer)$/;"	f
+buffer_read	helpers/buffer.c	/^char buffer_read(struct buffer* buffer)$/;"	f
+buffer_write	helpers/buffer.c	/^void buffer_write(struct buffer* buffer, char c)$/;"	f
+cfile	compiler.h	/^        } cfile;$/;"	m	struct:compile_process	typeref:struct:compile_process::compile_process_input_file
+col	compiler.h	/^        int col;$/;"	m	struct:pos
+compile_file	compiler.c	/^int compile_file(const char *filename, const char *out_filename, int flags)$/;"	f
+compile_process	compiler.h	/^struct compile_process {$/;"	s
+compile_process_create	cprocess.c	/^struct compile_process *compile_process_create(const char *filename,$/;"	f
+compile_process_input_file	compiler.h	/^        struct compile_process_input_file {$/;"	s	struct:compile_process
+compile_process_next_char	cprocess.c	/^char compile_process_next_char(struct lex_process *lex_process)$/;"	f
+compile_process_peek_char	cprocess.c	/^char compile_process_peek_char(struct lex_process *lex_process)$/;"	f
+compile_process_push_char	cprocess.c	/^void compile_process_push_char(struct lex_process *lex_process, char c)$/;"	f
+compiler	compiler.h	/^        struct compile_process *compiler;$/;"	m	struct:lex_process	typeref:struct:lex_process::compile_process
+compiler_error	compiler.c	/^void compiler_error(struct compile_process *compiler, const char *msg, ...)$/;"	f
+compiler_lex_functions	compiler.c	/^struct lex_process_functions compiler_lex_functions = {$/;"	v	typeref:struct:lex_process_functions
+compiler_warning	compiler.c	/^void compiler_warning(struct compile_process *compiler, const char *msg, ...)$/;"	f
+count	helpers/vector.h	/^    int count;$/;"	m	struct:vector
+current_expression_count	compiler.h	/^        int current_expression_count;$/;"	m	struct:lex_process
+cval	compiler.h	/^                char cval;$/;"	m	union:token::__anon3
+data	helpers/buffer.h	/^    char* data;$/;"	m	struct:buffer
+data	helpers/vector.h	/^    void* data;$/;"	m	struct:vector
+esize	helpers/vector.h	/^    size_t esize;$/;"	m	struct:vector
+filename	compiler.h	/^        const char *filename;$/;"	m	struct:pos
+flags	compiler.h	/^        int flags;$/;"	m	struct:compile_process
+flags	compiler.h	/^        int flags;$/;"	m	struct:token
+flags	helpers/vector.h	/^    int flags;$/;"	m	struct:vector
+fp	compiler.h	/^                FILE *fp;$/;"	m	struct:compile_process::compile_process_input_file
+function	compiler.h	/^        struct lex_process_functions *function;$/;"	m	struct:lex_process	typeref:struct:lex_process::lex_process_functions
+handle_whitespace	lexer.c	/^static struct token *handle_whitespace()$/;"	f	file:
+inum	compiler.h	/^                unsigned int inum;$/;"	m	union:token::__anon3
+len	helpers/buffer.h	/^    int len;$/;"	m	struct:buffer
+lex	lexer.c	/^int lex(struct lex_process *process)$/;"	f
+lex_file_position	lexer.c	/^static struct pos lex_file_position()$/;"	f	file:
+lex_process	compiler.h	/^struct lex_process {$/;"	s
+lex_process	lexer.c	/^static struct lex_process *lex_process;$/;"	v	typeref:struct:lex_process	file:
+lex_process_create	lex_process.c	/^struct lex_process *lex_process_create(struct compile_process *compiler, $/;"	f
+lex_process_free	lex_process.c	/^void lex_process_free(struct lex_process *process)$/;"	f
+lex_process_functions	compiler.h	/^struct lex_process_functions {$/;"	s
+lex_process_private	lex_process.c	/^void *lex_process_private(struct lex_process *process)$/;"	f
+lex_process_tokens	lex_process.c	/^struct vector *lex_process_tokens(struct lex_process *process)$/;"	f
+lexer_last_token	lexer.c	/^static struct token *lexer_last_token()$/;"	f	file:
+line	compiler.h	/^        int line;$/;"	m	struct:pos
+llnum	compiler.h	/^                unsigned long long llnum;$/;"	m	union:token::__anon3
+lnum	compiler.h	/^                unsigned long lnum;$/;"	m	union:token::__anon3
+main	main.c	/^int main()$/;"	f
+mindex	helpers/vector.h	/^    int mindex;$/;"	m	struct:vector
+msize	helpers/buffer.h	/^    int msize;$/;"	m	struct:buffer
+next_char	compiler.h	/^        LEX_PROCESS_NEXT_CHAR next_char;$/;"	m	struct:lex_process_functions
+nextc	lexer.c	/^static char nextc()$/;"	f	file:
+ofile	compiler.h	/^        FILE *ofile;$/;"	m	struct:compile_process
+parenthesis_buffer	compiler.h	/^        struct buffer *parenthesis_buffer;$/;"	m	struct:lex_process	typeref:struct:lex_process::buffer
+peek_char	compiler.h	/^        LEX_PROCESS_PEEK_CHAR peek_char;$/;"	m	struct:lex_process_functions
+peekc	lexer.c	/^static char peekc()$/;"	f	file:
+pindex	helpers/vector.h	/^    int pindex;$/;"	m	struct:vector
+pos	compiler.h	/^        struct pos pos;$/;"	m	struct:compile_process	typeref:struct:compile_process::pos
+pos	compiler.h	/^        struct pos pos;$/;"	m	struct:lex_process	typeref:struct:lex_process::pos
+pos	compiler.h	/^        struct pos pos;$/;"	m	struct:token	typeref:struct:token::pos
+pos	compiler.h	/^struct pos {$/;"	s
+push_char	compiler.h	/^        LEX_PROCESS_PUSH_CHAR push_char;$/;"	m	struct:lex_process_functions
+pushc	lexer.c	/^static void pushc(char c)$/;"	f	file:
+read_next_token	lexer.c	/^struct token *read_next_token()$/;"	f
+read_number	lexer.c	/^unsigned long long read_number()$/;"	f
+read_number_str	lexer.c	/^const char *read_number_str()$/;"	f
+rindex	helpers/buffer.h	/^    int rindex;$/;"	m	struct:buffer
+rindex	helpers/vector.h	/^    int rindex;$/;"	m	struct:vector
+saves	helpers/vector.h	/^    struct vector* saves;$/;"	m	struct:vector	typeref:struct:vector::vector
+sval	compiler.h	/^                const char *sval;$/;"	m	union:token::__anon3
+tmp_token	lexer.c	/^static struct token tmp_token;$/;"	v	typeref:struct:token	file:
+token	compiler.h	/^struct token {$/;"	s
+token_create	lexer.c	/^struct token *token_create(struct token *_token)$/;"	f
+token_make_number	lexer.c	/^struct token *token_make_number()$/;"	f
+token_make_number_for_value	lexer.c	/^struct token *token_make_number_for_value(unsigned long long number)$/;"	f
+token_vec	compiler.h	/^        struct vector *token_vec;$/;"	m	struct:lex_process	typeref:struct:lex_process::vector
+type	compiler.h	/^        int type; \/* see TOKEN_TYPE_* enum above *\/$/;"	m	struct:token
+vector	helpers/vector.h	/^struct vector$/;"	s
+vector_assert_bounds_for_pop	helpers/vector.c	/^static void vector_assert_bounds_for_pop(struct vector *vector, int index)$/;"	f	file:
+vector_at	helpers/vector.c	/^void *vector_at(struct vector *vector, int index)$/;"	f
+vector_back	helpers/vector.c	/^void *vector_back(struct vector *vector)$/;"	f
+vector_back_or_null	helpers/vector.c	/^void *vector_back_or_null(struct vector *vector)$/;"	f
+vector_back_ptr	helpers/vector.c	/^void *vector_back_ptr(struct vector *vector)$/;"	f
+vector_back_ptr_or_null	helpers/vector.c	/^void *vector_back_ptr_or_null(struct vector *vector)$/;"	f
+vector_clear	helpers/vector.c	/^void vector_clear(struct vector *vector)$/;"	f
+vector_clone	helpers/vector.c	/^struct vector *vector_clone(struct vector *vector)$/;"	f
+vector_count	helpers/vector.c	/^int vector_count(struct vector *vector)$/;"	f
+vector_create	helpers/vector.c	/^struct vector *vector_create(size_t esize)$/;"	f
+vector_create_no_saves	helpers/vector.c	/^struct vector *vector_create_no_saves(size_t esize)$/;"	f
+vector_current_index	helpers/vector.c	/^int vector_current_index(struct vector *vector)$/;"	f
+vector_data_end	helpers/vector.c	/^void *vector_data_end(struct vector *vector)$/;"	f
+vector_data_ptr	helpers/vector.c	/^void *vector_data_ptr(struct vector *vector)$/;"	f
+vector_element_size	helpers/vector.c	/^size_t vector_element_size(struct vector *vector)$/;"	f
+vector_elements_left	helpers/vector.c	/^size_t vector_elements_left(struct vector *vector, int index)$/;"	f
+vector_elements_until_end	helpers/vector.c	/^int vector_elements_until_end(struct vector *vector, int index)$/;"	f
+vector_empty	helpers/vector.c	/^bool vector_empty(struct vector *vector)$/;"	f
+vector_fread	helpers/vector.c	/^int vector_fread(struct vector *vector, int amount, FILE *fp)$/;"	f
+vector_free	helpers/vector.c	/^void vector_free(struct vector *vector)$/;"	f
+vector_in_bounds_for_at	helpers/vector.c	/^static bool vector_in_bounds_for_at(struct vector *vector, int index)$/;"	f	file:
+vector_in_bounds_for_pop	helpers/vector.c	/^static bool vector_in_bounds_for_pop(struct vector *vector, int index)$/;"	f	file:
+vector_insert	helpers/vector.c	/^int vector_insert(struct vector *vector_dst, struct vector *vector_src, int dst_index)$/;"	f
+vector_peek	helpers/vector.c	/^void *vector_peek(struct vector *vector)$/;"	f
+vector_peek_at	helpers/vector.c	/^void *vector_peek_at(struct vector *vector, int index)$/;"	f
+vector_peek_back	helpers/vector.c	/^void vector_peek_back(struct vector* vector)$/;"	f
+vector_peek_no_increment	helpers/vector.c	/^void *vector_peek_no_increment(struct vector *vector)$/;"	f
+vector_peek_pop	helpers/vector.c	/^void vector_peek_pop(struct vector *vector)$/;"	f
+vector_peek_ptr	helpers/vector.c	/^void *vector_peek_ptr(struct vector *vector)$/;"	f
+vector_peek_ptr_at	helpers/vector.c	/^void *vector_peek_ptr_at(struct vector *vector, int index)$/;"	f
+vector_pop	helpers/vector.c	/^void vector_pop(struct vector *vector)$/;"	f
+vector_pop_at	helpers/vector.c	/^void vector_pop_at(struct vector *vector, int index)$/;"	f
+vector_pop_at_data_address	helpers/vector.c	/^int vector_pop_at_data_address(struct vector *vector, void *address)$/;"	f
+vector_pop_last_peek	helpers/vector.c	/^void vector_pop_last_peek(struct vector* vector)$/;"	f
+vector_pop_value	helpers/vector.c	/^int vector_pop_value(struct vector* vector, void* val)$/;"	f
+vector_push	helpers/vector.c	/^void vector_push(struct vector *vector, void *elem)$/;"	f
+vector_push_at	helpers/vector.c	/^void vector_push_at(struct vector *vector, int index, void *ptr)$/;"	f
+vector_push_multiple_at	helpers/vector.c	/^void vector_push_multiple_at(struct vector *vector, int dst_index, void *ptr, int total)$/;"	f
+vector_resize	helpers/vector.c	/^void vector_resize(struct vector *vector)$/;"	f
+vector_resize_for	helpers/vector.c	/^void vector_resize_for(struct vector *vector, int total_elements)$/;"	f
+vector_resize_for_index	helpers/vector.c	/^void vector_resize_for_index(struct vector *vector, int start_index, int total_elements)$/;"	f
+vector_restore	helpers/vector.c	/^void vector_restore(struct vector *vector)$/;"	f
+vector_save	helpers/vector.c	/^void vector_save(struct vector *vector)$/;"	f
+vector_save_purge	helpers/vector.c	/^void vector_save_purge(struct vector *vector)$/;"	f
+vector_set_flag	helpers/vector.c	/^void vector_set_flag(struct vector *vector, int flag)$/;"	f
+vector_set_peek_pointer	helpers/vector.c	/^void vector_set_peek_pointer(struct vector *vector, int index)$/;"	f
+vector_set_peek_pointer_end	helpers/vector.c	/^void vector_set_peek_pointer_end(struct vector *vector)$/;"	f
+vector_shift_right	helpers/vector.c	/^void vector_shift_right(struct vector *vector, int index, int amount)$/;"	f
+vector_shift_right_in_bounds	helpers/vector.c	/^void vector_shift_right_in_bounds(struct vector *vector, int index, int amount)$/;"	f
+vector_shift_right_in_bounds_no_increment	helpers/vector.c	/^void vector_shift_right_in_bounds_no_increment(struct vector *vector, int index, int amount)$/;"	f
+vector_stretch	helpers/vector.c	/^void vector_stretch(struct vector *vector, int index)$/;"	f
+vector_string	helpers/vector.c	/^const char *vector_string(struct vector *vec)$/;"	f
+vector_total_size	helpers/vector.c	/^size_t vector_total_size(struct vector *vector)$/;"	f
+vector_unset_flag	helpers/vector.c	/^void vector_unset_flag(struct vector *vector, int flag)$/;"	f
+whitespace	compiler.h	/^        bool whitespace;$/;"	m	struct:token
